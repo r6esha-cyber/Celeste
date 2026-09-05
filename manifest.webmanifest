@@ -1,0 +1,42 @@
+{
+  "name": "Celeste — period & hormone tracker",
+  "short_name": "Celeste",
+  "description": "A period tracker that shows the hormones behind what you are feeling. Everything stays on your device.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fdf7f9",
+  "theme_color": "#fdf7f9",
+  "categories": [
+    "health",
+    "lifestyle",
+    "medical"
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

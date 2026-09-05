@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Celeste — period &amp; hormone tracker</title>
+    <meta name="description" content="A period tracker that shows the hormones behind what you are feeling. Everything stays on your device." />
+
+    <!-- viewport-fit=cover is what makes env(safe-area-inset-*) work on notched iPhones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+
+    <meta name="theme-color" content="#fdf7f9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#180f1e" media="(prefers-color-scheme: dark)" />
+
+    <!-- iOS home-screen behaviour -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Celeste" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/favicon.png" />
+
+    <!-- privacy: no referrer leakage from any outbound link -->
+    <meta name="referrer" content="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <style>
+      html, body { margin: 0; padding: 0; background: #f4e8ee; height: 100%; }
+      /* the page itself never scrolls — only the panel inside the app does */
+      body { overflow: hidden; overscroll-behavior: none; position: fixed;
+             width: 100%; -webkit-tap-highlight-color: transparent; }
+      #root { height: 100%; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
